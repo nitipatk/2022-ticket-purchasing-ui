@@ -309,10 +309,9 @@
                     .details{
                         display: flex;
                         flex-direction: column;
-                        flex-wrap: wrap;
                         justify-content: center;
                         width: 55%;
-                        height: fit-content;
+                        height: 20vmax;
                         padding: 2vmax;
                         background-color: #ebeef4;
                         border-radius: 1vmax;
@@ -744,6 +743,7 @@
                     border: 1px solid gray;
                     gap: 1vh;
                     border-radius: 0.2vmax;
+                    padding-bottom: 2vmax;
     
                     .paymentHeader{
                         text-align: left;
@@ -814,10 +814,9 @@
                         .details{
                             display: flex;
                             flex-direction: column;
-                            flex-wrap: wrap;
                             justify-content: center;
                             width: 55%;
-                            height: fit-content;
+                            height: 24vmax;
                             padding: 2vmax;
                             background-color: #ebeef4;
                             border-radius: 1vmax;

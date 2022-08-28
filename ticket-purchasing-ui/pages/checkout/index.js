@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import formatDate from '../../utility/formatDate'
 import Swal from 'sweetalert2'
 import Loader from '../../components/loader'
+import Image from 'next/image'
 
 //data
 import formatNumber from '../../utility/formatNumber'
@@ -352,13 +353,19 @@ const CheckOut =()=>{
                                 <div className={styles.row}>
                                     <div className={styles.method}>
                                         <div className={(payment == 1) ? styles.paymentBoxSelected : styles.paymentBox} onClick={()=>setPayment(1)}>
-                                            <img src="/icons/visa-credit-card.svg" alt="visa" />
+                                            <div style={{width: '100%', height: '100%', position: 'relative'}}>
+                                                <Image src="/icons/visa-credit-card.svg" alt="visa" layout='fill' objectFit='contain' />
+                                            </div>
                                         </div>
                                         <div className={(payment == 2) ? styles.paymentBoxSelected : styles.paymentBox} onClick={()=>setPayment(2)}>
-                                            <img src="/icons/mastercard.svg" alt="mastercard" />
+                                            <div div style={{width: '100%', height: '100%', position: 'relative'}}>
+                                                <Image src="/icons/mastercard.svg" alt="mastercard" layout='fill' objectFit='contain' />
+                                            </div>
                                         </div>
                                         <div className={(payment == 3) ? styles.paymentBoxSelected : styles.paymentBox} onClick={()=>setPayment(3)}>
-                                            <img src="/icons/paypal.svg" alt="paypal" />
+                                            <div div style={{width: '100%', height: '100%', position: 'relative'}}>
+                                                <Image src="/icons/paypal.svg" alt="paypal" layout='fill' objectFit='contain' />
+                                            </div>
                                         </div>
                                     </div>
                                     <div className={styles.details}>
